@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\C# Libraries\\bepuphysics1int-master\\Fix64Analyzer\\Fix64Analyzer\\Fix64Analyzer.csproj": {}
+  },
+  "projects": {
+    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\C# Libraries\\bepuphysics1int-master\\Fix64Analyzer\\Fix64Analyzer\\Fix64Analyzer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\C# Libraries\\bepuphysics1int-master\\Fix64Analyzer\\Fix64Analyzer\\Fix64Analyzer.csproj",
+        "projectName": "Fix64Analyzer",
+        "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\C# Libraries\\bepuphysics1int-master\\Fix64Analyzer\\Fix64Analyzer\\Fix64Analyzer.csproj",
+        "packagesPath": "C:\\Users\\infer\\.nuget\\packages\\",
+        "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\C# Libraries\\bepuphysics1int-master\\Fix64Analyzer\\Fix64Analyzer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\infer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard1.3"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard1.3": {
+            "targetAlias": "netstandard1.3",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard1.3": {
+          "targetAlias": "netstandard1.3",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp.Workspaces": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.6.1, )",
+              "autoReferenced": true
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
