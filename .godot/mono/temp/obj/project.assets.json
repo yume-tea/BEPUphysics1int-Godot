@@ -6834,9 +6834,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
-      "projectName": "Project Crescent",
-      "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
+      "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\BEPUphysics1int-Godot-Base-Project.csproj",
+      "projectName": "BEPUphysics1int-Godot-Base-Project",
+      "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\BEPUphysics1int-Godot-Base-Project.csproj",
       "packagesPath": "C:\\Users\\infer\\.nuget\\packages\\",
       "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
