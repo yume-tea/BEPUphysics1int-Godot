@@ -11,9 +11,9 @@
           "Godot.SourceGenerators": "4.2.0",
           "GodotSharp": "4.2.0",
           "GodotSharpEditor": "4.2.0",
-          "Microsoft.CodeAnalysis": "4.8.0",
+          "Microsoft.CodeAnalysis": "4.9.0-2.final",
           "MonoGame.Framework.DesktopGL": "3.8.1.303",
-          "xunit": "2.6.3"
+          "xunit": "2.6.5"
         },
         "runtime": {
           "Project Crescent.dll": {}
@@ -55,14 +55,14 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis/4.8.0": {
+      "Microsoft.CodeAnalysis/4.9.0-2.final": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.8.0",
-          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "4.8.0"
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "4.9.0-2.final",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "4.9.0-2.final"
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.4": {},
-      "Microsoft.CodeAnalysis.Common/4.8.0": {
+      "Microsoft.CodeAnalysis.Common/4.9.0-2.final": {
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
           "System.Collections.Immutable": "7.0.0",
@@ -71,8 +71,8 @@
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -117,14 +117,14 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/4.8.0": {
+      "Microsoft.CodeAnalysis.CSharp/4.9.0-2.final": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "4.8.0"
+          "Microsoft.CodeAnalysis.Common": "4.9.0-2.final"
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.CSharp.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -169,17 +169,17 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.8.0": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.9.0-2.final": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.CSharp": "4.8.0",
-          "Microsoft.CodeAnalysis.Common": "4.8.0",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "4.8.0"
+          "Microsoft.CodeAnalysis.CSharp": "4.9.0-2.final",
+          "Microsoft.CodeAnalysis.Common": "4.9.0-2.final",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "4.9.0-2.final"
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -224,14 +224,14 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
+      "Microsoft.CodeAnalysis.VisualBasic/4.9.0-2.final": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "4.8.0"
+          "Microsoft.CodeAnalysis.Common": "4.9.0-2.final"
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -276,16 +276,16 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.8.0": {
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.9.0-2.final": {
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "4.8.0",
-          "Microsoft.CodeAnalysis.VisualBasic": "4.8.0",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "4.8.0"
+          "Microsoft.CodeAnalysis.Common": "4.9.0-2.final",
+          "Microsoft.CodeAnalysis.VisualBasic": "4.9.0-2.final",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "4.9.0-2.final"
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -330,19 +330,19 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/4.8.0": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/4.9.0-2.final": {
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
-          "Microsoft.CodeAnalysis.Common": "4.8.0",
+          "Microsoft.CodeAnalysis.Common": "4.9.0-2.final",
           "System.Composition": "7.0.0",
           "System.IO.Pipelines": "7.0.0",
           "System.Threading.Channels": "7.0.0"
         },
         "runtime": {
           "lib/net6.0/Microsoft.CodeAnalysis.Workspaces.dll": {
-            "assemblyVersion": "4.8.0.0",
-            "fileVersion": "4.800.23.55801"
+            "assemblyVersion": "4.9.0.0",
+            "fileVersion": "4.900.23.61305"
           }
         },
         "resources": {
@@ -1202,11 +1202,11 @@
           "System.Xml.ReaderWriter": "4.3.0"
         }
       },
-      "xunit/2.6.3": {
+      "xunit/2.6.5": {
         "dependencies": {
-          "xunit.analyzers": "1.7.0",
-          "xunit.assert": "2.6.3",
-          "xunit.core": "2.6.3"
+          "xunit.analyzers": "1.9.0",
+          "xunit.assert": "2.6.5",
+          "xunit.core": "2.6.5"
         }
       },
       "xunit.abstractions/2.0.3": {
@@ -1217,42 +1217,42 @@
           }
         }
       },
-      "xunit.analyzers/1.7.0": {},
-      "xunit.assert/2.6.3": {
+      "xunit.analyzers/1.9.0": {},
+      "xunit.assert/2.6.5": {
         "runtime": {
           "lib/net6.0/xunit.assert.dll": {
-            "assemblyVersion": "2.6.3.0",
-            "fileVersion": "2.6.3.0"
+            "assemblyVersion": "2.6.5.0",
+            "fileVersion": "2.6.5.0"
           }
         }
       },
-      "xunit.core/2.6.3": {
+      "xunit.core/2.6.5": {
         "dependencies": {
-          "xunit.extensibility.core": "2.6.3",
-          "xunit.extensibility.execution": "2.6.3"
+          "xunit.extensibility.core": "2.6.5",
+          "xunit.extensibility.execution": "2.6.5"
         }
       },
-      "xunit.extensibility.core/2.6.3": {
+      "xunit.extensibility.core/2.6.5": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
           "xunit.abstractions": "2.0.3"
         },
         "runtime": {
           "lib/netstandard1.1/xunit.core.dll": {
-            "assemblyVersion": "2.6.3.0",
-            "fileVersion": "2.6.3.0"
+            "assemblyVersion": "2.6.5.0",
+            "fileVersion": "2.6.5.0"
           }
         }
       },
-      "xunit.extensibility.execution/2.6.3": {
+      "xunit.extensibility.execution/2.6.5": {
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "xunit.extensibility.core": "2.6.3"
+          "xunit.extensibility.core": "2.6.5"
         },
         "runtime": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
-            "assemblyVersion": "2.6.3.0",
-            "fileVersion": "2.6.3.0"
+            "assemblyVersion": "2.6.5.0",
+            "fileVersion": "2.6.5.0"
           }
         }
       }
@@ -1299,12 +1299,12 @@
       "path": "microsoft.bcl.asyncinterfaces/7.0.0",
       "hashPath": "microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis/4.8.0": {
+    "Microsoft.CodeAnalysis/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-g5eTgZVyBr4k1zxvJeVrJ1nDvBHrDt7XX2Uo7UWRoF9GdzOv9od4WtOeL1/e86ifgwX/H7H1Vs5u2OCdv0HYpQ==",
-      "path": "microsoft.codeanalysis/4.8.0",
-      "hashPath": "microsoft.codeanalysis.4.8.0.nupkg.sha512"
+      "sha512": "sha512-ooQMzNFf5kqUNaqruDf55Gc0oDeBWyNzNx87vgf/ltGmL15y6vVXWRpT2TDwYI0LMcSsTCEkgTGSVZz4NvAQFg==",
+      "path": "microsoft.codeanalysis/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.4.9.0-2.final.nupkg.sha512"
     },
     "Microsoft.CodeAnalysis.Analyzers/3.3.4": {
       "type": "package",
@@ -1313,47 +1313,47 @@
       "path": "microsoft.codeanalysis.analyzers/3.3.4",
       "hashPath": "microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Common/4.8.0": {
+    "Microsoft.CodeAnalysis.Common/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/jR+e/9aT+BApoQJABlVCKnnggGQbvGh7BKq2/wI1LamxC+LbzhcLj4Vj7gXCofl1n4E521YfF9w0WcASGg/KA==",
-      "path": "microsoft.codeanalysis.common/4.8.0",
-      "hashPath": "microsoft.codeanalysis.common.4.8.0.nupkg.sha512"
+      "sha512": "sha512-46JrndQoIZ4vIwd8PcWq40Ghqb3doylb5gEtJGgkSlzF3mVYB9dY+NslMNLRK5krmlzfQxqPygvaLFi8VZhSaQ==",
+      "path": "microsoft.codeanalysis.common/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.common.4.9.0-2.final.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp/4.8.0": {
+    "Microsoft.CodeAnalysis.CSharp/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-+3+qfdb/aaGD8PZRCrsdobbzGs1m9u119SkkJt8e/mk3xLJz/udLtS2T6nY27OTXxBBw10HzAbC8Z9w08VyP/g==",
-      "path": "microsoft.codeanalysis.csharp/4.8.0",
-      "hashPath": "microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512"
+      "sha512": "sha512-yUcJrTlM5mB0kN8t7RYAR7mh70tQ3BkD0zDIrThqRk+UW5+Dn85kIPnnV9uzBNgi6EymL2TC6lS0ePkdgv09ew==",
+      "path": "microsoft.codeanalysis.csharp/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.csharp.4.9.0-2.final.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.8.0": {
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3amm4tq4Lo8/BGvg9p3BJh3S9nKq2wqCXfS7138i69TUpo/bD+XvD0hNurpEBtcNZhi1FyutiomKJqVF39ugYA==",
-      "path": "microsoft.codeanalysis.csharp.workspaces/4.8.0",
-      "hashPath": "microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512"
+      "sha512": "sha512-bpjIFsHbU94uIUhk9Bwtox1llNt4/RR517O4hG10bDHKhr0i4w9ux0ZozAWGOt/J7ihSz0Dln+JkxTvqVzAyAw==",
+      "path": "microsoft.codeanalysis.csharp.workspaces/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.csharp.workspaces.4.9.0-2.final.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
+    "Microsoft.CodeAnalysis.VisualBasic/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-kfHPh/etcWypMDYfHxgfitgJMhi986OFCICb76RPcA1Toordf6bBYEJytWr2L5CNdkXFWuw5qTkrlsktBav4VA==",
-      "path": "microsoft.codeanalysis.visualbasic/4.8.0",
-      "hashPath": "microsoft.codeanalysis.visualbasic.4.8.0.nupkg.sha512"
+      "sha512": "sha512-K0TZi+XVxc3HprqQspQ67FbqL3MDWZosw/RgrVsQpibnyNak5dEUFnxastddGwVCcT561L0XCSkMPEk9GKZwDQ==",
+      "path": "microsoft.codeanalysis.visualbasic/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.visualbasic.4.9.0-2.final.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.8.0": {
+    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4fNpQX8LRV0ZCfB6+rr9s61zdhNpN6Bgow/kmvsO2Gm5KtzbOUPijbUZex26wJwRHyW+ZYoatTRd449A7+D3Wg==",
-      "path": "microsoft.codeanalysis.visualbasic.workspaces/4.8.0",
-      "hashPath": "microsoft.codeanalysis.visualbasic.workspaces.4.8.0.nupkg.sha512"
+      "sha512": "sha512-DDtu1TnS8uvuUEUGoc+45Uo8s/jJnl1WKYqH867f21L5KmHUfj9WWZ+9/vZrfVZSvaG31p+tb4093ErMaiIAfg==",
+      "path": "microsoft.codeanalysis.visualbasic.workspaces/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.visualbasic.workspaces.4.9.0-2.final.nupkg.sha512"
     },
-    "Microsoft.CodeAnalysis.Workspaces.Common/4.8.0": {
+    "Microsoft.CodeAnalysis.Workspaces.Common/4.9.0-2.final": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-LXyV+MJKsKRu3FGJA3OmSk40OUIa/dQCFLOnm5X8MNcujx7hzGu8o+zjXlb/cy5xUdZK2UKYb9YaQ2E8m9QehQ==",
-      "path": "microsoft.codeanalysis.workspaces.common/4.8.0",
-      "hashPath": "microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512"
+      "sha512": "sha512-yydHYJZJbgkcfuyGG6sqmb8idfC6XA7J3FndYH3Zu0E4x/09x2D26h9fay4HFEEBRurFMvnTcHNvpNJrlvg2iA==",
+      "path": "microsoft.codeanalysis.workspaces.common/4.9.0-2.final",
+      "hashPath": "microsoft.codeanalysis.workspaces.common.4.9.0-2.final.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
@@ -1950,12 +1950,12 @@
       "path": "system.xml.xdocument/4.3.0",
       "hashPath": "system.xml.xdocument.4.3.0.nupkg.sha512"
     },
-    "xunit/2.6.3": {
+    "xunit/2.6.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4CoGp3iKZORZ9aaHdPrFcdlDBRI/ZFRyDZWJuP7r2idULEtWf+k0yGT80cF/v6nE/MQDXLMIuSGDIrHuPLC/+Q==",
-      "path": "xunit/2.6.3",
-      "hashPath": "xunit.2.6.3.nupkg.sha512"
+      "sha512": "sha512-iPSL63kw21BdSsdA79bvbVNvyn17DWI4D6VbgNxYtvzgViKrmbRLr8sWPxSlc4AvnofEuFfAi/rrLSzSRomwCg==",
+      "path": "xunit/2.6.5",
+      "hashPath": "xunit.2.6.5.nupkg.sha512"
     },
     "xunit.abstractions/2.0.3": {
       "type": "package",
@@ -1964,40 +1964,40 @@
       "path": "xunit.abstractions/2.0.3",
       "hashPath": "xunit.abstractions.2.0.3.nupkg.sha512"
     },
-    "xunit.analyzers/1.7.0": {
+    "xunit.analyzers/1.9.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lAcpaB0KnjWETbPDMsDPoQi6zS0uXUYopmyTQDWvILJWcL9jwMxXXGmDLptlMA6vGi5Z0LtudsYN+dEUTmuHaA==",
-      "path": "xunit.analyzers/1.7.0",
-      "hashPath": "xunit.analyzers.1.7.0.nupkg.sha512"
+      "sha512": "sha512-02ucFDty6Y9BBT5c35YueFfbM3uEzeFdRvlNtAPhZVUkGUlhl3jsV2XesgTj986/PZXIjpVoc2D8ee6p1ha/Fw==",
+      "path": "xunit.analyzers/1.9.0",
+      "hashPath": "xunit.analyzers.1.9.0.nupkg.sha512"
     },
-    "xunit.assert/2.6.3": {
+    "xunit.assert/2.6.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7JWrjxDIAwF1vBZyENu4BZaddNJijIQcIQcc+73sJPWaqzDmseysTYv2jR0IWBsWIGa6LSfMO/3+dH0fsHL5Wg==",
-      "path": "xunit.assert/2.6.3",
-      "hashPath": "xunit.assert.2.6.3.nupkg.sha512"
+      "sha512": "sha512-gb5uv7vjBFz7nhEa6aXK5sVJwsG/88xf8DN5wqK0ejCDsDybqICyNJIj+eoD43xbmdPZryNDPpeWDCfiKI/bnA==",
+      "path": "xunit.assert/2.6.5",
+      "hashPath": "xunit.assert.2.6.5.nupkg.sha512"
     },
-    "xunit.core/2.6.3": {
+    "xunit.core/2.6.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-rlrm//9cNAlCkh3p5mdggzfchZlcXowUVK3UPqKiaN7G0Wu7gOUNLLZej9twnwTCVe1h3FEi9PRwzXMMXpFwSQ==",
-      "path": "xunit.core/2.6.3",
-      "hashPath": "xunit.core.2.6.3.nupkg.sha512"
+      "sha512": "sha512-hpdMnSNlx4ejaxpaIAFaqHt4q9ZCnzZLnURrSa5CzYXxHhIQbV8/0yXLjRdublhreonGXVMmsQ1KHlS9WbfpCw==",
+      "path": "xunit.core/2.6.5",
+      "hashPath": "xunit.core.2.6.5.nupkg.sha512"
     },
-    "xunit.extensibility.core/2.6.3": {
+    "xunit.extensibility.core/2.6.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qWCpmK4nxFBsf68r35AgnrW6B+xjTCpjJYfJkaBaini4Myl/2P/Ro6WocVtJfpHilkatitVFgM3XVR0jthdJlQ==",
-      "path": "xunit.extensibility.core/2.6.3",
-      "hashPath": "xunit.extensibility.core.2.6.3.nupkg.sha512"
+      "sha512": "sha512-dSGRkVxzH27XaL83+Z9kNPllqgsmsiPayXw+0weCGsrZQxfSCBNNkSb9nYUpkVoEBCUviXOmo1tfApqhgqTjog==",
+      "path": "xunit.extensibility.core/2.6.5",
+      "hashPath": "xunit.extensibility.core.2.6.5.nupkg.sha512"
     },
-    "xunit.extensibility.execution/2.6.3": {
+    "xunit.extensibility.execution/2.6.5": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-I+9OA9a6WVia40bxJi3KaxVcjTE1ouHqD0QcrjHA/hLl7Ozb5eQmV7ecLu3gRZlPLdcVN+If8IZcEmqytmLtkA==",
-      "path": "xunit.extensibility.execution/2.6.3",
-      "hashPath": "xunit.extensibility.execution.2.6.3.nupkg.sha512"
+      "sha512": "sha512-jUMr88e0lSqDq8Vut0XVqx7plFg91QsKW/rX6gaVnJL6Z19LmNSDmyqd7cg6HQGfboAmyoFZyydA4Kcgouu1BA==",
+      "path": "xunit.extensibility.execution/2.6.5",
+      "hashPath": "xunit.extensibility.execution.2.6.5.nupkg.sha512"
     }
   }
 }

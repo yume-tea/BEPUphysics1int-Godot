@@ -63,11 +63,11 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis/4.8.0": {
+      "Microsoft.CodeAnalysis/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[4.8.0]",
-          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[4.8.0]"
+          "Microsoft.CodeAnalysis.CSharp.Workspaces": "[4.9.0-2.final]",
+          "Microsoft.CodeAnalysis.VisualBasic.Workspaces": "[4.9.0-2.final]"
         }
       },
       "Microsoft.CodeAnalysis.Analyzers/3.3.4": {
@@ -77,7 +77,7 @@
           "buildTransitive/Microsoft.CodeAnalysis.Analyzers.targets": {}
         }
       },
-      "Microsoft.CodeAnalysis.Common/4.8.0": {
+      "Microsoft.CodeAnalysis.Common/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
           "Microsoft.CodeAnalysis.Analyzers": "3.3.4",
@@ -137,10 +137,10 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp/4.8.0": {
+      "Microsoft.CodeAnalysis.CSharp/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[4.8.0]"
+          "Microsoft.CodeAnalysis.Common": "[4.9.0-2.final]"
         },
         "compile": {
           "lib/net6.0/Microsoft.CodeAnalysis.CSharp.dll": {
@@ -194,13 +194,13 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.8.0": {
+      "Microsoft.CodeAnalysis.CSharp.Workspaces/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
-          "Microsoft.CodeAnalysis.CSharp": "[4.8.0]",
-          "Microsoft.CodeAnalysis.Common": "[4.8.0]",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.8.0]"
+          "Microsoft.CodeAnalysis.CSharp": "[4.9.0-2.final]",
+          "Microsoft.CodeAnalysis.Common": "[4.9.0-2.final]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.9.0-2.final]"
         },
         "compile": {
           "lib/net6.0/Microsoft.CodeAnalysis.CSharp.Workspaces.dll": {
@@ -254,10 +254,10 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
+      "Microsoft.CodeAnalysis.VisualBasic/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[4.8.0]"
+          "Microsoft.CodeAnalysis.Common": "[4.9.0-2.final]"
         },
         "compile": {
           "lib/net6.0/Microsoft.CodeAnalysis.VisualBasic.dll": {
@@ -311,12 +311,12 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.8.0": {
+      "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
-          "Microsoft.CodeAnalysis.Common": "[4.8.0]",
-          "Microsoft.CodeAnalysis.VisualBasic": "[4.8.0]",
-          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.8.0]"
+          "Microsoft.CodeAnalysis.Common": "[4.9.0-2.final]",
+          "Microsoft.CodeAnalysis.VisualBasic": "[4.9.0-2.final]",
+          "Microsoft.CodeAnalysis.Workspaces.Common": "[4.9.0-2.final]"
         },
         "compile": {
           "lib/net6.0/Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll": {
@@ -370,12 +370,12 @@
           }
         }
       },
-      "Microsoft.CodeAnalysis.Workspaces.Common/4.8.0": {
+      "Microsoft.CodeAnalysis.Workspaces.Common/4.9.0-2.final": {
         "type": "package",
         "dependencies": {
           "Humanizer.Core": "2.14.1",
           "Microsoft.Bcl.AsyncInterfaces": "7.0.0",
-          "Microsoft.CodeAnalysis.Common": "[4.8.0]",
+          "Microsoft.CodeAnalysis.Common": "[4.9.0-2.final]",
           "System.Composition": "7.0.0",
           "System.IO.Pipelines": "7.0.0",
           "System.Threading.Channels": "7.0.0"
@@ -1956,12 +1956,12 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "xunit/2.6.3": {
+      "xunit/2.6.5": {
         "type": "package",
         "dependencies": {
-          "xunit.analyzers": "1.7.0",
-          "xunit.assert": "2.6.3",
-          "xunit.core": "[2.6.3]"
+          "xunit.analyzers": "1.9.0",
+          "xunit.assert": "2.6.5",
+          "xunit.core": "[2.6.5]"
         }
       },
       "xunit.abstractions/2.0.3": {
@@ -1977,10 +1977,10 @@
           }
         }
       },
-      "xunit.analyzers/1.7.0": {
+      "xunit.analyzers/1.9.0": {
         "type": "package"
       },
-      "xunit.assert/2.6.3": {
+      "xunit.assert/2.6.5": {
         "type": "package",
         "compile": {
           "lib/net6.0/xunit.assert.dll": {
@@ -1993,11 +1993,11 @@
           }
         }
       },
-      "xunit.core/2.6.3": {
+      "xunit.core/2.6.5": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.6.3]",
-          "xunit.extensibility.execution": "[2.6.3]"
+          "xunit.extensibility.core": "[2.6.5]",
+          "xunit.extensibility.execution": "[2.6.5]"
         },
         "build": {
           "build/xunit.core.props": {},
@@ -2008,7 +2008,7 @@
           "buildMultiTargeting/xunit.core.targets": {}
         }
       },
-      "xunit.extensibility.core/2.6.3": {
+      "xunit.extensibility.core/2.6.5": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
@@ -2025,11 +2025,11 @@
           }
         }
       },
-      "xunit.extensibility.execution/2.6.3": {
+      "xunit.extensibility.execution/2.6.5": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.1",
-          "xunit.extensibility.core": "[2.6.3]"
+          "xunit.extensibility.core": "[2.6.5]"
         },
         "compile": {
           "lib/netstandard1.1/xunit.execution.dotnet.dll": {
@@ -2125,16 +2125,16 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.CodeAnalysis/4.8.0": {
-      "sha512": "g5eTgZVyBr4k1zxvJeVrJ1nDvBHrDt7XX2Uo7UWRoF9GdzOv9od4WtOeL1/e86ifgwX/H7H1Vs5u2OCdv0HYpQ==",
+    "Microsoft.CodeAnalysis/4.9.0-2.final": {
+      "sha512": "ooQMzNFf5kqUNaqruDf55Gc0oDeBWyNzNx87vgf/ltGmL15y6vVXWRpT2TDwYI0LMcSsTCEkgTGSVZz4NvAQFg==",
       "type": "package",
-      "path": "microsoft.codeanalysis/4.8.0",
+      "path": "microsoft.codeanalysis/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "ThirdPartyNotices.rtf",
-        "microsoft.codeanalysis.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.nuspec"
       ]
     },
@@ -2739,10 +2739,10 @@
         "tools/uninstall.ps1"
       ]
     },
-    "Microsoft.CodeAnalysis.Common/4.8.0": {
-      "sha512": "/jR+e/9aT+BApoQJABlVCKnnggGQbvGh7BKq2/wI1LamxC+LbzhcLj4Vj7gXCofl1n4E521YfF9w0WcASGg/KA==",
+    "Microsoft.CodeAnalysis.Common/4.9.0-2.final": {
+      "sha512": "46JrndQoIZ4vIwd8PcWq40Ghqb3doylb5gEtJGgkSlzF3mVYB9dY+NslMNLRK5krmlzfQxqPygvaLFi8VZhSaQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.common/4.8.0",
+      "path": "microsoft.codeanalysis.common/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2796,14 +2796,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
-        "microsoft.codeanalysis.common.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.common.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.common.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.CSharp/4.8.0": {
-      "sha512": "+3+qfdb/aaGD8PZRCrsdobbzGs1m9u119SkkJt8e/mk3xLJz/udLtS2T6nY27OTXxBBw10HzAbC8Z9w08VyP/g==",
+    "Microsoft.CodeAnalysis.CSharp/4.9.0-2.final": {
+      "sha512": "yUcJrTlM5mB0kN8t7RYAR7mh70tQ3BkD0zDIrThqRk+UW5+Dn85kIPnnV9uzBNgi6EymL2TC6lS0ePkdgv09ew==",
       "type": "package",
-      "path": "microsoft.codeanalysis.csharp/4.8.0",
+      "path": "microsoft.codeanalysis.csharp/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2857,14 +2857,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
-        "microsoft.codeanalysis.csharp.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.csharp.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.8.0": {
-      "sha512": "3amm4tq4Lo8/BGvg9p3BJh3S9nKq2wqCXfS7138i69TUpo/bD+XvD0hNurpEBtcNZhi1FyutiomKJqVF39ugYA==",
+    "Microsoft.CodeAnalysis.CSharp.Workspaces/4.9.0-2.final": {
+      "sha512": "bpjIFsHbU94uIUhk9Bwtox1llNt4/RR517O4hG10bDHKhr0i4w9ux0ZozAWGOt/J7ihSz0Dln+JkxTvqVzAyAw==",
       "type": "package",
-      "path": "microsoft.codeanalysis.csharp.workspaces/4.8.0",
+      "path": "microsoft.codeanalysis.csharp.workspaces/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2918,14 +2918,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
-        "microsoft.codeanalysis.csharp.workspaces.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.workspaces.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.csharp.workspaces.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.VisualBasic/4.8.0": {
-      "sha512": "kfHPh/etcWypMDYfHxgfitgJMhi986OFCICb76RPcA1Toordf6bBYEJytWr2L5CNdkXFWuw5qTkrlsktBav4VA==",
+    "Microsoft.CodeAnalysis.VisualBasic/4.9.0-2.final": {
+      "sha512": "K0TZi+XVxc3HprqQspQ67FbqL3MDWZosw/RgrVsQpibnyNak5dEUFnxastddGwVCcT561L0XCSkMPEk9GKZwDQ==",
       "type": "package",
-      "path": "microsoft.codeanalysis.visualbasic/4.8.0",
+      "path": "microsoft.codeanalysis.visualbasic/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2979,14 +2979,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.resources.dll",
-        "microsoft.codeanalysis.visualbasic.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.visualbasic.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.visualbasic.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.8.0": {
-      "sha512": "4fNpQX8LRV0ZCfB6+rr9s61zdhNpN6Bgow/kmvsO2Gm5KtzbOUPijbUZex26wJwRHyW+ZYoatTRd449A7+D3Wg==",
+    "Microsoft.CodeAnalysis.VisualBasic.Workspaces/4.9.0-2.final": {
+      "sha512": "DDtu1TnS8uvuUEUGoc+45Uo8s/jJnl1WKYqH867f21L5KmHUfj9WWZ+9/vZrfVZSvaG31p+tb4093ErMaiIAfg==",
       "type": "package",
-      "path": "microsoft.codeanalysis.visualbasic.workspaces/4.8.0",
+      "path": "microsoft.codeanalysis.visualbasic.workspaces/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3040,14 +3040,14 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll",
-        "microsoft.codeanalysis.visualbasic.workspaces.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.visualbasic.workspaces.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.visualbasic.workspaces.nuspec"
       ]
     },
-    "Microsoft.CodeAnalysis.Workspaces.Common/4.8.0": {
-      "sha512": "LXyV+MJKsKRu3FGJA3OmSk40OUIa/dQCFLOnm5X8MNcujx7hzGu8o+zjXlb/cy5xUdZK2UKYb9YaQ2E8m9QehQ==",
+    "Microsoft.CodeAnalysis.Workspaces.Common/4.9.0-2.final": {
+      "sha512": "yydHYJZJbgkcfuyGG6sqmb8idfC6XA7J3FndYH3Zu0E4x/09x2D26h9fay4HFEEBRurFMvnTcHNvpNJrlvg2iA==",
       "type": "package",
-      "path": "microsoft.codeanalysis.workspaces.common/4.8.0",
+      "path": "microsoft.codeanalysis.workspaces.common/4.9.0-2.final",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3101,7 +3101,7 @@
         "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll",
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll",
-        "microsoft.codeanalysis.workspaces.common.4.8.0.nupkg.sha512",
+        "microsoft.codeanalysis.workspaces.common.4.9.0-2.final.nupkg.sha512",
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
@@ -6690,16 +6690,16 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "xunit/2.6.3": {
-      "sha512": "4CoGp3iKZORZ9aaHdPrFcdlDBRI/ZFRyDZWJuP7r2idULEtWf+k0yGT80cF/v6nE/MQDXLMIuSGDIrHuPLC/+Q==",
+    "xunit/2.6.5": {
+      "sha512": "iPSL63kw21BdSsdA79bvbVNvyn17DWI4D6VbgNxYtvzgViKrmbRLr8sWPxSlc4AvnofEuFfAi/rrLSzSRomwCg==",
       "type": "package",
-      "path": "xunit/2.6.3",
+      "path": "xunit/2.6.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "_content/README.md",
         "_content/logo-128-transparent.png",
-        "xunit.2.6.3.nupkg.sha512",
+        "xunit.2.6.5.nupkg.sha512",
         "xunit.nuspec"
       ]
     },
@@ -6720,28 +6720,36 @@
         "xunit.abstractions.nuspec"
       ]
     },
-    "xunit.analyzers/1.7.0": {
-      "sha512": "lAcpaB0KnjWETbPDMsDPoQi6zS0uXUYopmyTQDWvILJWcL9jwMxXXGmDLptlMA6vGi5Z0LtudsYN+dEUTmuHaA==",
+    "xunit.analyzers/1.9.0": {
+      "sha512": "02ucFDty6Y9BBT5c35YueFfbM3uEzeFdRvlNtAPhZVUkGUlhl3jsV2XesgTj986/PZXIjpVoc2D8ee6p1ha/Fw==",
       "type": "package",
-      "path": "xunit.analyzers/1.7.0",
+      "path": "xunit.analyzers/1.9.0",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "_content/README.md",
         "_content/logo-128-transparent.png",
-        "analyzers/dotnet/cs/xunit.analyzers.dll",
-        "analyzers/dotnet/cs/xunit.analyzers.fixes.dll",
+        "analyzers/dotnet/roslyn3.11/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/roslyn3.11/cs/xunit.analyzers.fixes.dll",
+        "analyzers/dotnet/roslyn4.2/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/roslyn4.2/cs/xunit.analyzers.fixes.dll",
+        "analyzers/dotnet/roslyn4.4/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/roslyn4.4/cs/xunit.analyzers.fixes.dll",
+        "analyzers/dotnet/roslyn4.6/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/roslyn4.6/cs/xunit.analyzers.fixes.dll",
+        "analyzers/dotnet/roslyn4.8/cs/xunit.analyzers.dll",
+        "analyzers/dotnet/roslyn4.8/cs/xunit.analyzers.fixes.dll",
         "tools/install.ps1",
         "tools/uninstall.ps1",
-        "xunit.analyzers.1.7.0.nupkg.sha512",
+        "xunit.analyzers.1.9.0.nupkg.sha512",
         "xunit.analyzers.nuspec"
       ]
     },
-    "xunit.assert/2.6.3": {
-      "sha512": "7JWrjxDIAwF1vBZyENu4BZaddNJijIQcIQcc+73sJPWaqzDmseysTYv2jR0IWBsWIGa6LSfMO/3+dH0fsHL5Wg==",
+    "xunit.assert/2.6.5": {
+      "sha512": "gb5uv7vjBFz7nhEa6aXK5sVJwsG/88xf8DN5wqK0ejCDsDybqICyNJIj+eoD43xbmdPZryNDPpeWDCfiKI/bnA==",
       "type": "package",
-      "path": "xunit.assert/2.6.3",
+      "path": "xunit.assert/2.6.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6751,14 +6759,14 @@
         "lib/net6.0/xunit.assert.xml",
         "lib/netstandard1.1/xunit.assert.dll",
         "lib/netstandard1.1/xunit.assert.xml",
-        "xunit.assert.2.6.3.nupkg.sha512",
+        "xunit.assert.2.6.5.nupkg.sha512",
         "xunit.assert.nuspec"
       ]
     },
-    "xunit.core/2.6.3": {
-      "sha512": "rlrm//9cNAlCkh3p5mdggzfchZlcXowUVK3UPqKiaN7G0Wu7gOUNLLZej9twnwTCVe1h3FEi9PRwzXMMXpFwSQ==",
+    "xunit.core/2.6.5": {
+      "sha512": "hpdMnSNlx4ejaxpaIAFaqHt4q9ZCnzZLnURrSa5CzYXxHhIQbV8/0yXLjRdublhreonGXVMmsQ1KHlS9WbfpCw==",
       "type": "package",
-      "path": "xunit.core/2.6.3",
+      "path": "xunit.core/2.6.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6768,14 +6776,14 @@
         "build/xunit.core.targets",
         "buildMultiTargeting/xunit.core.props",
         "buildMultiTargeting/xunit.core.targets",
-        "xunit.core.2.6.3.nupkg.sha512",
+        "xunit.core.2.6.5.nupkg.sha512",
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.6.3": {
-      "sha512": "qWCpmK4nxFBsf68r35AgnrW6B+xjTCpjJYfJkaBaini4Myl/2P/Ro6WocVtJfpHilkatitVFgM3XVR0jthdJlQ==",
+    "xunit.extensibility.core/2.6.5": {
+      "sha512": "dSGRkVxzH27XaL83+Z9kNPllqgsmsiPayXw+0weCGsrZQxfSCBNNkSb9nYUpkVoEBCUviXOmo1tfApqhgqTjog==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.6.3",
+      "path": "xunit.extensibility.core/2.6.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6788,14 +6796,14 @@
         "lib/net452/xunit.runner.utility.net452.dll",
         "lib/netstandard1.1/xunit.core.dll",
         "lib/netstandard1.1/xunit.core.xml",
-        "xunit.extensibility.core.2.6.3.nupkg.sha512",
+        "xunit.extensibility.core.2.6.5.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.6.3": {
-      "sha512": "I+9OA9a6WVia40bxJi3KaxVcjTE1ouHqD0QcrjHA/hLl7Ozb5eQmV7ecLu3gRZlPLdcVN+If8IZcEmqytmLtkA==",
+    "xunit.extensibility.execution/2.6.5": {
+      "sha512": "jUMr88e0lSqDq8Vut0XVqx7plFg91QsKW/rX6gaVnJL6Z19LmNSDmyqd7cg6HQGfboAmyoFZyydA4Kcgouu1BA==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.6.3",
+      "path": "xunit.extensibility.execution/2.6.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -6805,7 +6813,7 @@
         "lib/net452/xunit.execution.desktop.xml",
         "lib/netstandard1.1/xunit.execution.dotnet.dll",
         "lib/netstandard1.1/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.6.3.nupkg.sha512",
+        "xunit.extensibility.execution.2.6.5.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     }
@@ -6815,9 +6823,9 @@
       "Godot.SourceGenerators >= 4.2.0",
       "GodotSharp >= 4.2.0",
       "GodotSharpEditor >= 4.2.0",
-      "Microsoft.CodeAnalysis >= 4.8.0",
+      "Microsoft.CodeAnalysis >= 4.9.0-2.final",
       "MonoGame.Framework.DesktopGL >= 3.8.1.303",
-      "xunit >= 2.6.3"
+      "xunit >= 2.6.5"
     ]
   },
   "packageFolders": {
@@ -6826,11 +6834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int base project\\Project Crescent.csproj",
+      "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
       "projectName": "Project Crescent",
-      "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int base project\\Project Crescent.csproj",
+      "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
       "packagesPath": "C:\\Users\\infer\\.nuget\\packages\\",
-      "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int base project\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\infer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -6873,7 +6881,7 @@
           },
           "Microsoft.CodeAnalysis": {
             "target": "Package",
-            "version": "[4.8.0, )"
+            "version": "[4.9.0-2.final, )"
           },
           "MonoGame.Framework.DesktopGL": {
             "target": "Package",
@@ -6881,7 +6889,7 @@
           },
           "xunit": {
             "target": "Package",
-            "version": "[2.6.3, )"
+            "version": "[2.6.5, )"
           }
         },
         "imports": [
