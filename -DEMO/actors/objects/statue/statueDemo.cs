@@ -9,7 +9,7 @@ using BEPUphysics.BroadPhaseEntries.MobileCollidables;
 
 
 [Tool]
-public partial class statue : StaticBody
+public partial class statueDemo : StaticBody
 {
 	public override void _Ready()
 	{

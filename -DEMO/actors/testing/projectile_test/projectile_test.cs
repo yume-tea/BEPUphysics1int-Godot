@@ -51,6 +51,8 @@ public partial class projectile_test : KinematicBody
 			return;
 		}
 
+		GD.Print("projectile hit target");
+
 		QueueFree();
     }
 

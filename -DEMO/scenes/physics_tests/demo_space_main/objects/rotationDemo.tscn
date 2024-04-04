@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bqtummaelsyx0"]
+
+[ext_resource type="Script" path="res://-custom_nodes/PhysicsBody/RigidBody/RigidBody.cs" id="1_cwlun"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_dvqby"]
+[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="3_h64px"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeBox.cs" id="4_3q15h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6obg"]
+shading_mode = 0
+diffuse_mode = 3
+albedo_color = Color(0.345098, 0.909804, 0.498039, 1)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ak4nu"]
+material = SubResource("StandardMaterial3D_c6obg")
+
+[sub_resource type="BoxMesh" id="BoxMesh_nnl1w"]
+material = ExtResource("3_h64px")
+size = Vector3(3, 3, 3)
+
+[node name="RotationDemo" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -19.4723, 4.229, 10.9442)
+script = ExtResource("1_cwlun")
+mass = 32
+posOffset = Vector3(-19.4723, 4.229, 10.9442)
+posOffsetX = -83632891677
+posOffsetY = 18163416694
+posOffsetZ = 47004981080
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_dvqby")]
+transform = Transform3D(0.999998, 0, 0, 0, 0.999998, 0, 0, 0, 0.999998, 0, 2.3, 0)
+type = 1
+shape = NodePath("Shape")
+posOffset = Vector3(0, 2.3, 0)
+posOffsetY = 9878424780
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ColShape"]
+transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -9.53674e-07, 0, -2.88271)
+mesh = SubResource("SphereMesh_ak4nu")
+
+[node name="Shape" parent="ColShape" index="1"]
+mesh = SubResource("BoxMesh_nnl1w")
+script = ExtResource("4_3q15h")
+size = Vector3(3, 3, 3)
+sizeX = 12884901888
+sizeY = 12884901888
+sizeZ = 12884901888
+
+[editable path="ColShape"]

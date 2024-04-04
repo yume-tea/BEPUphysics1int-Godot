@@ -1,28 +1,14 @@
-[gd_scene load_steps=15 format=3 uid="uid://ca27c6mo70hw3"]
+[gd_scene load_steps=10 format=3 uid="uid://ca27c6mo70hw3"]
 
 [ext_resource type="Script" path="res://-DEMO/scenes/physics_tests/demo_space_main/PhysicsDemoSpace.cs" id="1_053bd"]
 [ext_resource type="Environment" uid="uid://dic646ekf57ug" path="res://env_default.tres" id="2_ppv33"]
 [ext_resource type="PackedScene" uid="uid://b2jqedr5ag5yd" path="res://-DEMO/actors/player/Player.tscn" id="3_5y1fn"]
 [ext_resource type="PackedScene" uid="uid://c1adburpkiosm" path="res://-DEMO/scenes/physics_tests/demo_space_main/objects/ground.tscn" id="4_tu006"]
 [ext_resource type="PackedScene" uid="uid://dix7fwy582ser" path="res://-DEMO/actors/testing/area_test/area.tscn.tscn" id="5_lqmog"]
-[ext_resource type="PackedScene" uid="uid://baac0vfnch66j" path="res://-DEMO/actors/objects/statue/statue.tscn" id="6_he8k3"]
+[ext_resource type="PackedScene" uid="uid://baac0vfnch66j" path="res://-DEMO/actors/objects/statue/statueDemo.tscn" id="6_he8k3"]
 [ext_resource type="PackedScene" uid="uid://cpk18w6503y60" path="res://-DEMO/actors/testing/projectile_test/projectile_test.tscn" id="7_fu6e0"]
-[ext_resource type="PackedScene" uid="uid://dpt518os4srey" path="res://-custom_nodes/PhysicsBody/RigidBody/RigidBody.tscn" id="8_oi1gf"]
-[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="9_aeitd"]
-[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="10_mdpco"]
-[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeBox.cs" id="11_m8ymh"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_u0y0w"]
-material = ExtResource("10_mdpco")
-size = Vector3(3, 3, 3)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c6obg"]
-shading_mode = 0
-diffuse_mode = 3
-albedo_color = Color(0.345098, 0.909804, 0.498039, 1)
-
-[sub_resource type="SphereMesh" id="SphereMesh_ak4nu"]
-material = SubResource("StandardMaterial3D_c6obg")
+[ext_resource type="PackedScene" uid="uid://bk6p4itrk8b3o" path="res://-DEMO/scenes/physics_tests/demo_space_main/objects/boxDemo.tscn" id="8_biv8l"]
+[ext_resource type="PackedScene" uid="uid://bqtummaelsyx0" path="res://-DEMO/scenes/physics_tests/demo_space_main/objects/rotationDemo.tscn" id="8_iyf3i"]
 
 [node name="PhysicsDemoSpace" type="Node"]
 script = ExtResource("1_053bd")
@@ -52,9 +38,6 @@ posOffsetY = 12884901888
 posOffsetZ = -68719476736
 
 [node name="statue" parent="." instance=ExtResource("6_he8k3")]
-mass = 0
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
 
 [node name="projectile_test" parent="." instance=ExtResource("7_fu6e0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.7207, 62.3899, -74.3178)
@@ -65,133 +48,27 @@ posOffsetZ = -319192520510
 quatOffset = Quaternion(0, 0, 0, 1)
 quatOffsetW = 4294967296
 
-[node name="RigidBody" parent="." instance=ExtResource("8_oi1gf")]
-transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 13.638, 1.5, -10.7933)
-posOffset = Vector3(13.638, 1.5, -10.7933)
-posOffsetX = 58574763982
-posOffsetY = 6442450944
-posOffsetZ = -46356870515
-quatOffset = Quaternion(0, -0.440096, 0, 0.897951)
-quatOffsetY = -1890197927
-quatOffsetW = 3856669319
+[node name="RotationDemo" parent="." instance=ExtResource("8_iyf3i")]
 
-[node name="ColShape" parent="RigidBody" node_paths=PackedStringArray("shape") instance=ExtResource("9_aeitd")]
-type = 1
-shape = NodePath("Shape")
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
+[node name="RigidBody" parent="." instance=ExtResource("8_biv8l")]
 
-[node name="Shape" parent="RigidBody/ColShape" index="0"]
-mesh = SubResource("BoxMesh_u0y0w")
-script = ExtResource("11_m8ymh")
-size = Vector3(3, 3, 3)
-sizeX = 12884901888
-sizeY = 12884901888
-sizeZ = 12884901888
+[node name="RigidBody2" parent="." instance=ExtResource("8_biv8l")]
+transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 18.1067, 1.5, -10.7933)
+posOffset = Vector3(18.1067, 1.5, -10.7933)
+posOffsetX = 77767684338
 
-[node name="RigidBody2" parent="." instance=ExtResource("8_oi1gf")]
-transform = Transform3D(0.695336, 0, -0.718685, 0, 1, 0, 0.718685, 0, 0.695336, 18.1383, 1.5, -10.7933)
-posOffset = Vector3(18.1383, 1.5, -10.7933)
-posOffsetX = 77903405305
-posOffsetY = 6442450944
-posOffsetZ = -46356870515
-quatOffset = Quaternion(0, -0.390297, 0, 0.920689)
-quatOffsetY = -1676314568
-quatOffsetW = 3954328285
+[node name="RigidBody3" parent="." instance=ExtResource("8_biv8l")]
+transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 16.2896, 1.5, -14.104)
+posOffset = Vector3(16.2896, 1.5, -14.104)
+posOffsetX = 69963127466
+posOffsetZ = -60576347591
 
-[node name="ColShape" parent="RigidBody2" node_paths=PackedStringArray("shape") instance=ExtResource("9_aeitd")]
-type = 1
-shape = NodePath("../../RigidBody/ColShape/Shape")
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="Shape" parent="RigidBody2/ColShape" index="0"]
-mesh = SubResource("BoxMesh_u0y0w")
-script = ExtResource("11_m8ymh")
-size = Vector3(3, 3, 3)
-sizeX = 12884901888
-sizeY = 12884901888
-sizeZ = 12884901888
-
-[node name="RigidBody3" parent="." instance=ExtResource("8_oi1gf")]
-transform = Transform3D(0.628493, 0, -0.777816, 0, 1, 0, 0.777816, 0, 0.628493, 15.7295, 1.5, -13.8382)
-posOffset = Vector3(15.7295, 1.5, -13.8382)
-posOffsetX = 67557688082
-posOffsetY = 6442450944
-posOffsetZ = -59434616435
-quatOffset = Quaternion(0, -0.430992, 0, 0.902356)
-quatOffsetY = -1851094397
-quatOffsetW = 3875589509
-
-[node name="ColShape" parent="RigidBody3" node_paths=PackedStringArray("shape") instance=ExtResource("9_aeitd")]
-type = 1
-shape = NodePath("../../RigidBody/ColShape/Shape")
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="Shape" parent="RigidBody3/ColShape" index="0"]
-mesh = SubResource("BoxMesh_u0y0w")
-script = ExtResource("11_m8ymh")
-size = Vector3(3, 3, 3)
-sizeX = 12884901888
-sizeY = 12884901888
-sizeZ = 12884901888
-
-[node name="RigidBody4" parent="." instance=ExtResource("8_oi1gf")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15.5474, 4.5, -11.7076)
-posOffset = Vector3(15.5474, 4.5, -11.7076)
-posOffsetX = 66775574537
+[node name="RigidBody4" parent="." instance=ExtResource("8_biv8l")]
+transform = Transform3D(-0.0811037, 0, -0.996706, 0, 1, 0, 0.996706, 0, -0.0811037, 16.29, 4.5, -11.342)
+posOffset = Vector3(16.29, 4.5, -11.342)
+posOffsetX = 69965017251
 posOffsetY = 19327352832
-posOffsetZ = -50283759114
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="ColShape" parent="RigidBody4" node_paths=PackedStringArray("shape") instance=ExtResource("9_aeitd")]
-type = 1
-shape = NodePath("../../RigidBody/ColShape/Shape")
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="Shape" parent="RigidBody4/ColShape" index="0"]
-mesh = SubResource("BoxMesh_u0y0w")
-script = ExtResource("11_m8ymh")
-size = Vector3(3, 3, 3)
-sizeX = 12884901888
-sizeY = 12884901888
-sizeZ = 12884901888
-
-[node name="RotationDemo" parent="." instance=ExtResource("8_oi1gf")]
-transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, -19.4723, 4.229, 10.9442)
-posOffset = Vector3(-19.4723, 4.229, 10.9442)
-posOffsetX = -83632891677
-posOffsetY = 18163416694
-posOffsetZ = 47004981080
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="ColShape" parent="RotationDemo" node_paths=PackedStringArray("shape") instance=ExtResource("9_aeitd")]
-transform = Transform3D(0.999998, 0, 0, 0, 0.999998, 0, 0, 0, 0.999998, 0, 2.3, 0)
-type = 1
-shape = NodePath("../../RigidBody/ColShape/Shape")
-posOffset = Vector3(0, 2.3, 0)
-posOffsetY = 9878424780
-quatOffset = Quaternion(0, 0, 0, 1)
-quatOffsetW = 4294967296
-
-[node name="Shape" parent="RotationDemo/ColShape" index="0"]
-mesh = SubResource("BoxMesh_u0y0w")
-script = ExtResource("11_m8ymh")
-size = Vector3(3, 3, 3)
-sizeX = 12884901888
-sizeY = 12884901888
-sizeZ = 12884901888
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RotationDemo/ColShape"]
-transform = Transform3D(1, 0, -2.98023e-08, 0, 1, 0, 2.98023e-08, 0, 1, -9.53674e-07, 0, -2.88271)
-mesh = SubResource("SphereMesh_ak4nu")
-
-[editable path="RigidBody/ColShape"]
-[editable path="RigidBody2/ColShape"]
-[editable path="RigidBody3/ColShape"]
-[editable path="RigidBody4/ColShape"]
-[editable path="RotationDemo/ColShape"]
+posOffsetZ = -48713519071
+quatOffset = Quaternion(0, -0.735222, 0, 0.677826)
+quatOffsetY = -3157755733
+quatOffsetW = 2911240502

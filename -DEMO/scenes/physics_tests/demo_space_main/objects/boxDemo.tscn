@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://bk6p4itrk8b3o"]
+
+[ext_resource type="Script" path="res://-DEMO/scenes/physics_tests/demo_space_main/objects/boxDemo.cs" id="1_d1it1"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_mnmvp"]
+[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="3_u1qx7"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeBox.cs" id="4_w0s0b"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_76mxt"]
+material = ExtResource("3_u1qx7")
+size = Vector3(3, 3, 3)
+
+[node name="RigidBody" type="Node3D"]
+transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 13.638, 1.5, -10.7933)
+script = ExtResource("1_d1it1")
+mass = 44
+posOffset = Vector3(13.638, 1.5, -10.7933)
+posOffsetX = 58574763982
+posOffsetY = 6442450944
+posOffsetZ = -46356870515
+quatOffset = Quaternion(0, -0.440096, 0, 0.897951)
+quatOffsetY = -1890197927
+quatOffsetW = 3856669319
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_mnmvp")]
+type = 1
+shape = NodePath("Shape")
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="Shape" parent="ColShape" index="0"]
+mesh = SubResource("BoxMesh_76mxt")
+script = ExtResource("4_w0s0b")
+size = Vector3(3, 3, 3)
+sizeX = 12884901888
+sizeY = 12884901888
+sizeZ = 12884901888
+
+[editable path="ColShape"]

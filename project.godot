@@ -28,7 +28,7 @@ project/assembly_name="BEPUphysics1int-Godot"
 
 [editor]
 
-script/templates_search_path="res://scripts/script_templates/"
+script/templates_search_path="res://scripts/script_templates"
 
 [editor_plugins]
 

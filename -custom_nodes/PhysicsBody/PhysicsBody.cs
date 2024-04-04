@@ -20,6 +20,7 @@ public partial class PhysicsBody : Node3D
 {
 	public enum PhysicsBodyType
 	{
+		Unset,
 		CharacterBody,
 		KinematicBody,
 		RigidBody,
@@ -142,7 +143,7 @@ public partial class PhysicsBody : Node3D
 	public Godot.Vector3 ColShapeOrigin;  // Saves initial position offset of ColShape
 	protected Godot.Quaternion BodyQuat;
 	protected Godot.Quaternion ColShapeQuat;  // Saves initial orientation offset of ColShape
-	public PhysicsBodyType type;
+	public PhysicsBodyType type = PhysicsBodyType.Unset;
 
 	public PhysicsHandler physicsHandler;
 
@@ -151,7 +152,8 @@ public partial class PhysicsBody : Node3D
 	{
 		physicsHandler = GetNode<PhysicsHandler>("/root/PhysicsHandler");
 
-		if (Name == "Player") {
+		if (type == PhysicsBodyType.Unset) {
+			GD.Print(Name + " was not set to one of CharacterBody, KinematicBody, RigidBody, StaticBody, or Area as it's inheirited class");
 		}
 	}
 
