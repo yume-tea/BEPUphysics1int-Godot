@@ -51,20 +51,27 @@ quatOffsetW = 4294967296
 [node name="RotationDemo" parent="." instance=ExtResource("8_iyf3i")]
 
 [node name="RigidBody" parent="." instance=ExtResource("8_biv8l")]
+mass = 1
+quatOffset = Quaternion(0, -0.440096, 0, 0.897951)
 
 [node name="RigidBody2" parent="." instance=ExtResource("8_biv8l")]
 transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 18.1067, 1.5, -10.7933)
+mass = 1
 posOffset = Vector3(18.1067, 1.5, -10.7933)
 posOffsetX = 77767684338
+quatOffset = Quaternion(0, -0.440096, 0, 0.897951)
 
 [node name="RigidBody3" parent="." instance=ExtResource("8_biv8l")]
 transform = Transform3D(0.612631, 0, -0.790369, 0, 1, 0, 0.790369, 0, 0.612631, 16.2896, 1.5, -14.104)
+mass = 1
 posOffset = Vector3(16.2896, 1.5, -14.104)
-posOffsetX = 69963127466
-posOffsetZ = -60576347591
+posOffsetX = 69963299264
+posOffsetZ = -60576218742
+quatOffset = Quaternion(0, -0.440096, 0, 0.897951)
 
 [node name="RigidBody4" parent="." instance=ExtResource("8_biv8l")]
 transform = Transform3D(-0.0811037, 0, -0.996706, 0, 1, 0, 0.996706, 0, -0.0811037, 16.29, 4.5, -11.342)
+mass = 1
 posOffset = Vector3(16.29, 4.5, -11.342)
 posOffsetX = 69965017251
 posOffsetY = 19327352832

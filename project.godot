@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="BEPUphysics1int-Godot"
-run/main_scene="res://-DEMO/scenes/determinism_tests/input_replay_test/InputReplayTest.tscn"
+run/main_scene="res://-DEMO/scenes/physics_tests/demo_space_main/PhysicsDemoSpace.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
