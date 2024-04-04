@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://doo2knvjrr7bm"]
+
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/ColShape.cs" id="1_6t8iv"]
+
+[node name="ColShape" type="Node3D"]
+script = ExtResource("1_6t8iv")

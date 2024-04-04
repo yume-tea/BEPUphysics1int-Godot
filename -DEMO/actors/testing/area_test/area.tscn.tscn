@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dix7fwy582ser"]
+
+[ext_resource type="Script" path="res://-DEMO/actors/testing/area_test/area_test.cs" id="1_1tn5r"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_eshff"]
+[ext_resource type="Material" uid="uid://8hgns12hdasj" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_area.material" id="3_0ug2p"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeBox.cs" id="4_e5gyw"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_u2x8e"]
+material = ExtResource("3_0ug2p")
+size = Vector3(3, 3, 3)
+
+[node name="area_test" type="Node3D"]
+script = ExtResource("1_1tn5r")
+_CollisionGroup = 5
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_eshff")]
+type = 1
+shape = NodePath("Shape")
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="Shape" parent="ColShape" index="0"]
+material_override = ExtResource("3_0ug2p")
+mesh = SubResource("BoxMesh_u2x8e")
+script = ExtResource("4_e5gyw")
+size = Vector3(3, 3, 3)
+sizeX = 12884901888
+sizeY = 12884901888
+sizeZ = 12884901888
+
+[editable path="ColShape"]

@@ -1,0 +1,44 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1adburpkiosm"]
+
+[ext_resource type="Script" path="res://-DEMO/actors/objects/ground/ground.cs" id="1_mybx5"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_vmrye"]
+[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="3_rh7nr"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeBox.cs" id="4_o7nno"]
+[ext_resource type="Material" uid="uid://mpd8ckurwhe6" path="res://-DEMO/assets/materials/simple/simple_floor.material" id="5_d5hjf"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_ec6mn"]
+material = ExtResource("3_rh7nr")
+size = Vector3(64, 5, 64)
+
+[sub_resource type="BoxMesh" id="BoxMesh_46a3h"]
+size = Vector3(64, 5, 64)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_mybx5")
+mass = 0
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_vmrye")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.5, 0)
+type = 1
+shape = NodePath("Shape")
+VisibleCollision = false
+posOffset = Vector3(0, -2.5, 0)
+posOffsetY = -10737418240
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="Shape" parent="ColShape" index="0"]
+visible = false
+material_override = ExtResource("3_rh7nr")
+mesh = SubResource("BoxMesh_ec6mn")
+script = ExtResource("4_o7nno")
+size = Vector3(64, 5, 64)
+sizeX = 274877906944
+sizeY = 21474836480
+sizeZ = 274877906944
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ColShape"]
+material_override = ExtResource("5_d5hjf")
+mesh = SubResource("BoxMesh_46a3h")
+
+[editable path="ColShape"]

@@ -10,14 +10,62 @@ config_version=5
 
 [application]
 
-config/name="BEPUphysics1int Base Project"
+config/name="BEPUphysics1int-Godot"
+run/main_scene="res://-DEMO/scenes/determinism_tests/input_replay_test/InputReplayTest.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*res://-DEMO/scripts/autoload/Global.cs"
+DeterminismVerifier="*res://-DEMO/scripts/autoload/DeterminismVerifier.cs"
+PhysicsHandler="*res://scripts/autoload/PhysicsHandler.cs"
+InputHandler="*res://scripts/autoload/InputHandler.cs"
+
 [dotnet]
 
-project/assembly_name="BEPUphysics1int-Godot-Base-Project"
+project/assembly_name="BEPUphysics1int-Godot"
+
+[editor]
+
+script/templates_search_path="res://scripts/script_templates/"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/external_editor_toggle_plugin/plugin.cfg")
 
 [filesystem]
 
 import/fbx/enabled=false
+
+[input]
+
+quit={
+"deadzone": 0.5,
+"events": [Object(InputEventKey,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"pressed":false,"keycode":0,"physical_keycode":4194305,"key_label":0,"unicode":0,"echo":false,"script":null)
+]
+}
+jump={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":0,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+dodge_right={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":10,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+dodge_left={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":9,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+end_record={
+"deadzone": 0.5,
+"events": [Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":4,"pressure":0.0,"pressed":true,"script":null)
+]
+}
+
+[rendering]
+
+lights_and_shadows/directional_shadow/soft_shadow_filter_quality=0

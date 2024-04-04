@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj": {}
+    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\Project Crescent\\Project Crescent.csproj": {}
   },
   "projects": {
-    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj": {
+    "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\Project Crescent\\Project Crescent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
+        "projectUniqueName": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\Project Crescent\\Project Crescent.csproj",
         "projectName": "Project Crescent",
-        "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\Project Crescent.csproj",
+        "projectPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\Project Crescent\\Project Crescent.csproj",
         "packagesPath": "C:\\Users\\infer\\.nuget\\packages\\",
-        "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\BEPUphysics1int-Godot-Base-Project\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "A:\\D Drive Backup\\Media\\Creative Tools\\Godot Engine\\Godot 4\\Projects\\Project Crescent\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\infer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -54,7 +54,7 @@
             },
             "Microsoft.CodeAnalysis": {
               "target": "Package",
-              "version": "[4.9.0-2.final, )"
+              "version": "[4.8.0, )"
             },
             "MonoGame.Framework.DesktopGL": {
               "target": "Package",
@@ -62,7 +62,7 @@
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.6.5, )"
+              "version": "[2.6.3, )"
             }
           },
           "imports": [

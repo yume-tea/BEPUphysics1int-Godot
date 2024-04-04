@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cw61ngqpgq4mo"]
+
+[ext_resource type="Script" path="res://-custom_nodes/PhysicsBody/KinematicBody/KinematicBody.cs" id="1_wlqc6"]
+
+[node name="KinematicBody" type="Node3D"]
+script = ExtResource("1_wlqc6")

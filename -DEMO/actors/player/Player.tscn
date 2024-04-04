@@ -1,0 +1,181 @@
+[gd_scene load_steps=18 format=3 uid="uid://b2jqedr5ag5yd"]
+
+[ext_resource type="Script" path="res://-DEMO/actors/player/Player.cs" id="1_pl3ep"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_7huv6"]
+[ext_resource type="PackedScene" uid="uid://ck3gdfnlqwrqs" path="res://-DEMO/actors/player/cameraRigPlayer/cameraRigPlayer.tscn" id="3_3m171"]
+[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="3_qkmqt"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeCylinder.cs" id="4_uftt1"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/StateMachinePlayer.cs" id="4_y8unn"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/states/Idle.cs" id="5_agfei"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/states/Walk.cs" id="6_fwxhf"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/states/Jump.cs" id="7_rjluk"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/states/DodgeRight.cs" id="8_iij70"]
+[ext_resource type="Script" path="res://-DEMO/actors/player/StateMachinePlayer/states/DodgeLeft.cs" id="9_d3ni7"]
+[ext_resource type="Animation" uid="uid://i4co1763ya" path="res://-DEMO/actors/player/anims/DodgeRightFix64.anim" id="10_7nop8"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_gekir"]
+material = ExtResource("3_qkmqt")
+height = 3.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf2ca"]
+albedo_color = Color(0.352, 0.471467, 0.8, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_u3wov"]
+material = SubResource("StandardMaterial3D_yf2ca")
+height = 3.0
+
+[sub_resource type="Animation" id="Animation_0hkes"]
+length = 0.400002
+step = 0.0166667
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0166667, 0.0333333, 0.05, 0.0666667, 0.0833333, 0.1, 0.116667, 0.133333, 0.15, 0.166667, 0.183333, 0.2, 0.216667, 0.233333, 0.25, 0.266667, 0.283333, 0.3, 0.316667, 0.333333, 0.35, 0.366667, 0.383333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"values": [{
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}, {
+"args": [-42949672960, 0, 0],
+"method": &"Move"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_isgel"]
+_data = {
+"DodgeLeftFix64": SubResource("Animation_0hkes"),
+"DodgeRightFix64": ExtResource("10_7nop8")
+}
+
+[node name="Player" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+script = ExtResource("1_pl3ep")
+mass = 10
+_CollisionGroup = 1
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_7huv6")]
+transform = Transform3D(1, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0, 1.5, 0)
+type = 3
+shape = NodePath("Shape")
+VisibleCollision = false
+posOffset = Vector3(0, 1.5, 0)
+posOffsetY = 6442450944
+quatOffset = Quaternion(0, 0, 0, 1)
+quatOffsetW = 4294967296
+
+[node name="Shape" parent="ColShape" index="0"]
+visible = false
+material_override = ExtResource("3_qkmqt")
+mesh = SubResource("CylinderMesh_gekir")
+script = ExtResource("4_uftt1")
+height = 3.0
+radius = 0.5
+heightRaw = 12884901888
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="ColShape"]
+mesh = SubResource("CylinderMesh_u3wov")
+
+[node name="CameraRigPlayer" parent="." instance=ExtResource("3_3m171")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.75, 0)
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("InitialState")]
+script = ExtResource("4_y8unn")
+InitialState = NodePath("Idle")
+
+[node name="Idle" type="Node" parent="StateMachine"]
+script = ExtResource("5_agfei")
+
+[node name="Walk" type="Node" parent="StateMachine"]
+script = ExtResource("6_fwxhf")
+
+[node name="Jump" type="Node" parent="StateMachine"]
+script = ExtResource("7_rjluk")
+
+[node name="DodgeRight" type="Node" parent="StateMachine"]
+script = ExtResource("8_iij70")
+
+[node name="DodgeLeft" type="Node" parent="StateMachine"]
+script = ExtResource("9_d3ni7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+callback_mode_process = 0
+libraries = {
+"": SubResource("AnimationLibrary_isgel")
+}
+
+[connection signal="animation_finished" from="AnimationPlayer" to="StateMachine/DodgeRight" method="_OnAnimationFinished"]
+[connection signal="animation_finished" from="AnimationPlayer" to="StateMachine/DodgeLeft" method="_OnAnimationFinished"]
+
+[editable path="ColShape"]

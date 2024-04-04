@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://dpt518os4srey"]
+
+[ext_resource type="Script" path="res://-custom_nodes/PhysicsBody/RigidBody/RigidBody.cs" id="1_uib0s"]
+
+[node name="RigidBody" type="Node3D"]
+script = ExtResource("1_uib0s")
+mass = 32

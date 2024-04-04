@@ -1,4 +1,2 @@
-# BEPUphysics1int-Godot-Base-Project
- Base project using a fixed point fork of BEPUphysics in Godot Mono
-
-BEPUphysics1int Documentation: https://github.com/sam-vdp/bepuphysics1int/blob/master/Documentation/Documentation.md
+# Project Ensorcel
+ Game project using Godot for visual end and BEPUphysics1int for physics/collisions

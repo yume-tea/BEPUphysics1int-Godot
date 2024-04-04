@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://cpk18w6503y60"]
+
+[ext_resource type="Script" path="res://-DEMO/actors/testing/projectile_test/projectile_test.cs" id="1_wnaxa"]
+[ext_resource type="PackedScene" uid="uid://doo2knvjrr7bm" path="res://-custom_nodes/ColShape/ColShape.tscn" id="2_hy1cu"]
+[ext_resource type="Material" uid="uid://c6ypot3c22on6" path="res://-custom_nodes/ColShape/Shape/materials_collision/debug_physicsbody.material" id="3_ls3de"]
+[ext_resource type="Script" path="res://-custom_nodes/ColShape/Shape/ColShapeSphere.cs" id="4_bbqas"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_sl5um"]
+material = ExtResource("3_ls3de")
+radius = 1.0
+height = 2.0
+
+[node name="projectile_test" type="Node3D"]
+script = ExtResource("1_wnaxa")
+_CollisionGroup = 4
+
+[node name="ColShape" parent="." node_paths=PackedStringArray("shape") instance=ExtResource("2_hy1cu")]
+type = 4
+shape = NodePath("Shape")
+
+[node name="Shape" parent="ColShape" index="0"]
+mesh = SubResource("SphereMesh_sl5um")
+script = ExtResource("4_bbqas")
+radius = 1.0
+radiusRaw = 4294967296
+
+[editable path="ColShape"]

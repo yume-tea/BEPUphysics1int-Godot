@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cll41hj825y7a"]
+
+[ext_resource type="Script" path="res://-custom_nodes/PhysicsBody/Area/Area.cs" id="1_8mtpw"]
+
+[node name="Area" type="Node3D"]
+script = ExtResource("1_8mtpw")

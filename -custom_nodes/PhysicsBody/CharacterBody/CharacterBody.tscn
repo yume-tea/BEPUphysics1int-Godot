@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bd86od1wvgkxm"]
+
+[ext_resource type="Script" path="res://-custom_nodes/PhysicsBody/CharacterBody/CharacterBody.cs" id="1_xwmiv"]
+
+[node name="CharacterBody" type="Node3D"]
+script = ExtResource("1_xwmiv")
