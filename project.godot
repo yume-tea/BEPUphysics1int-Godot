@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-Global="*res://scripts/autoload/Global.cs"
+Global="*res://-DEMO/scripts/autoload/Global.cs"
 DeterminismVerifier="*res://-DEMO/scripts/autoload/DeterminismVerifier.cs"
 PhysicsHandler="*res://scripts/autoload/PhysicsHandler.cs"
 InputHandler="*res://scripts/autoload/InputHandler.cs"
